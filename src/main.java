@@ -1,7 +1,7 @@
 
-//public class Datatypes{
+public class main{
 
-//public static void main(String[] arg){
+public static void main(String[] arg){
 //    int a = 10; //
 //    int a = 1.1 // incorrect cause found float required int
 
@@ -28,11 +28,11 @@
 
 //    Char has 2 byte size because java is UNIC0DE based and its range is 0-65535
 
-
-
-
-
 //    System.out.println(ch);
-//}
-//
-//}
+
+int roll = 20;
+    System.out.println(roll);
+
+}
+
+}
