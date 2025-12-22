@@ -59,9 +59,29 @@ public class Literals{
 //        System.out.println(ch);
 
 
-boolean isThereAnyThing = false;
-        System.out.println(isThereAnyThing);
+//boolean isThereAnyThing = false;
+//        System.out.println(isThereAnyThing);
 
+
+//        character literals------------------->
+//        1) single character with single quote --------> char a = 'a';
+//        2) crossponding unicode value -------> char a = 97;
+//        3) unicode representation ---------> char a = '\u0061';
+//        System.out.println(a);
+
+//        4) Escape characters
+//        \n -> new line
+//        \t -> horizontal tab
+//        \r -> carriage return
+//        \b -> backspace
+//        \f -> form feed
+//        \' -> single quote
+//        \" -> double quote
+//        \\ -> back slash
+
+//        System.out.println("hello\" sangit");
+
+//        string literal
 
     }
 }
