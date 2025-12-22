@@ -61,7 +61,7 @@ public class Array{
 //        only for first variable in a declaration, if we are trying to apply for next variable we will compile time error
 
 
-
+//        --------------------  [Three Dimensational] array declaration------------------
 
 
 
