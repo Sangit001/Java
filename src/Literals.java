@@ -81,7 +81,38 @@ public class Literals{
 
 //        System.out.println("hello\" sangit");
 
-//        string literal
+//        string literal--------------------------------------->
+//        any sequence of character within double is treated as string literal
+
+//        For integral datatypes until 1.6v we can specify literal value in the following ways:-
+//        Decimal form
+//        Octal form
+//        Hexa Decimal form
+//        But from 1.7v onwards we can specify literal value even in a binary form also, allowed
+//        digits are 0 and 1, literal value should he prefixer with b or B
+//
+//        int x = 0b1111;
+//        System.out.println(x);  ans 15
+
+//        usuage of underscore (_) symbol in numeric literals
+//        From 1.7v we can use underscore symbol between digits of numeric literal
+//        double d = 123456.789;
+        double d = 123_456.7_8_9;
+//        The main adv of this approach is readibility of the code will be improved
+//        At the time of compilation this underscore symbol will be removed automatically
+//        hence after compilation the above lines become double d =  123456.789;
+//          We can use more than one underscore  symbol between digits
+        double db = 1_____2____4_____8;
+
+//          We can assign lower value datatype to higer value datatype
+
+//        byte -----> short -----> int -----> long -----> float -----> double
+//        chat -----> int -----> long -----> float -----> double
+//          8 byte long value we can assign to 4 byte float variable because both are following
+//        different memory representation internally
+//        float f = 10l;
+//        System.out.println(f);  ans 10.0
+
 
     }
 }
