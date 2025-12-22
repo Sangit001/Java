@@ -1,5 +1,5 @@
 
-public class main{
+public class Datatypes {
 
 public static void main(String[] arg){
 //    int a = 10; //
@@ -32,6 +32,11 @@ public static void main(String[] arg){
 
 int roll = 20;
     System.out.println(roll);
+
+
+
+//    int abc = ;
+//    System.out.println(abc);
 
 }
 
