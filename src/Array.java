@@ -213,14 +213,40 @@ public class Array{
 //       int[] x;
 //        x = {10,20,30};
 //    } ///// CE: illegal start of expression, if we want to use that shortcut compulsory
-//    we should perform all acitivity in a single line.
+//    we should perform all activity in a single line.
 
 
 
 
 
 
-    }
+
+
+//        ---------------------------6. length   vs     length() --------------------------------
+
+//        length:---------->
+
+//        -------> length is a final variable applicable for arrays
+//        -------> length variable represent the size of an arrays
+//                    int[] p = new int[6];
+//        System.out.println(p.length());  -------->  CE: cannot find symbol/ symbol: method length() Location: class int[].
+//        System.out.println(p.length);
+
+
+//        length() ---------->
+//        -------> length() method is a final method applicable for String objects.
+//        -------> length() returns number of characters present in the String
+
+//        CONCLUSION: length variable is applicable but not in String objects, whereas length()
+//        is applicable for String objects but not for arrays.
+
+        String[] s = {"a","aa","aaa","aaaa"};
+        System.out.println(s.length); // ans: 4
+//        System.out.println(s.length());  compile time error symbol not found
+//        System.out.println(s[0].length);  compile time error symbol not found
+        System.out.println(s[0].length()); // ans: 1
+
+}
 
 
 
