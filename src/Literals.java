@@ -52,7 +52,7 @@ public class Literals{
 //        System.out.println(ch);
 //        char a = 97;  ans a
 
-//      char cha = 0xface;
+//        char cha = 0xface;
 //        char ch = 077777; right
 //        char ch = 65535;
 //        char ch = 65536; throws an error cause max range of char is 65535 and goes above that it becomes int
@@ -65,7 +65,7 @@ public class Literals{
 
 //        character literals------------------->
 //        1) single character with single quote --------> char a = 'a';
-//        2) crossponding unicode value -------> char a = 97;
+//        2) corresponding unicode value -------> char a = 97;
 //        3) unicode representation ---------> char a = '\u0061';
 //        System.out.println(a);
 
@@ -112,6 +112,9 @@ public class Literals{
 //        different memory representation internally
 //        float f = 10l;
 //        System.out.println(f);  ans 10.0
+//
+//        double a = 10;
+//        System.out.println(a);
 
 
     }

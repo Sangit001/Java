@@ -132,6 +132,96 @@ public class Array{
 //        =============  The main advantage of this approach is  =============
 //        <-------------  Memory utilization is improved  ---------------->
 
+//        int[][][] x = new int[2][][];// -----------------> Three dimensional array
+//        x[0] = new int [3][];
+//        x[0][0] = new int[1];
+//        x[0][1] = new int[2];
+//        x[0][2] = new int[3];
+//        x[1] = new int[2][2];
+
+//        int[] a = new int[];              --------> invalid
+//        int[] a = new int[3];             --------> valid
+//        int[][] a = new int[][];          -------> invalid
+//        int[][] a = new int[][3];         --------> invalid
+//        int[][] a = new int [2][3];       --------> valid
+//        int[][] a = new int[2][];         --------> valid
+//        int[][][] a = new int[5][4][3];   --------> valid
+//        int[][][] a = new int[][3][3];    --------> invalid
+//        int[][][] a = new int[3][][6];    --------> invalid
+//        int[][][] a = new int[3][5][];    --------> valid
+
+//        int[] t = new int[3];
+//        System.out.println(t); ----------->[I@27716f4
+//        System.out.println(t[0]);
+//       NOTE: Whenever we are trying to print any refrence variable internally two string method will be called,
+//       which is implmented by default to return the string in the following form:-
+//       {classname@hashcode_in_hexadecimal form}
+
+//        once we create an array every element by default initializer with default values
+
+
+//        *Eg.2*
+//        int[][] p = new int[2][3];
+//        System.out.println(p); ----------->[[I@3r212
+//        System.out.println(p[0]); -------->[I@43r34
+//        System.out.println(p[0][0]); ----->0
+
+//            *Eg.3*
+//        int[][] m = new int[2][];
+//        System.out.println(m); ------->[I$540r4;
+//        System.out.println(m[0]); ------>null
+//        System.out.println(m[][]);------>RE: NPE
+
+
+//        Once we creates an array every array element by default initializer with default values
+//        if we are not satisfied with default values then we can overwrite these values with our customized values.
+
+//        int[] array = new int[6];
+//        array[0] =10;
+//        array[1] =100;
+//        array[2] =20;
+//        array[3] =200;
+//        array[4] =30;
+//        array[5] =300;
+//        array[2.5] = 40; ------> invalid CE:- PLP Found: double Required: int
+
+
+//      ---------------------  Array Declaration, creation and initialization in a single line  -----------------------
+
+
+//        We can declare creat in a single line (shortcut representation)
+//        int[] x;
+//        x = new int[3];
+//        x[0] = 10;
+//        x[1] = 20;
+//        x[2] = 30;
+
+//        but in single line
+//        int[] x = {10,20,30};
+//        char[] ch = {'a','e','i','o','u'};
+//        String[] st = {"A","AA","AAA","AAAA"};
+
+//        We can extend this shortcut even for multidimensional arrays also
+//        int[][] x = {{20,30},{40,50,60}};
+
+//        {
+//        int[][][] x = new int[2][3][2];
+//        int[][][] a = {{{10,20}, {30,40},{50,60}}, {{70,80}, {80,90},{90,100}}};
+//    }
+
+//       {
+//       int[] x;
+//        x = {10,20,30};
+//    } ///// CE: illegal start of expression, if we want to use that shortcut compulsory
+//    we should perform all acitivity in a single line.
+
+
+
+
+
+
     }
+
+
 
 }
