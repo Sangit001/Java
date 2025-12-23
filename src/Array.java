@@ -1,5 +1,5 @@
 public class Array{
-    public static void main(String[] arg){
+    public static void main(String[] arg) {
 
 //        1. introduction
 //        2. array declaration
@@ -22,10 +22,6 @@ public class Array{
 //        Hence to use array concept compulsory we should know the size in advance, which may not possible always.
 
 
-
-
-
-
 //        2. Array Declaration
 
 //        --------------------  [One Dimensional] array declaration------------------
@@ -37,7 +33,6 @@ public class Array{
 
 //        int [6] x; ----> wrong because at the time of declaration we cannot specify the size
 //        otherwise we will get compile time error.
-
 
 
 //        --------------------  [Two Dimensional] array declaration------------------
@@ -77,9 +72,6 @@ public class Array{
 //        int  []a[][];
 
 
-
-
-
 //        3. Array creation------------------------------------->
 //    Every array in java is an object only hence we can create an arrays by using new operator
 
@@ -117,10 +109,10 @@ public class Array{
 //        short d = 55;
 //        int[] e = new int[d];
 //        int[] character = new int['a'];
-        char[] forA = new char[1];
+//        char[] forA = new char[1];
 
 //        int[] p = new int[10l];----------> incorrect / invalid
-        System.out.println(forA);
+//        System.out.println(forA);
 //        System.out.println(character);
 
 
@@ -129,7 +121,6 @@ public class Array{
         // which is the maximum value of int datatype.
 //        Even in the first case we may get run time exception if sufficient heap memory not available
 //        int[] overFlow = new int[21474836348];  ---------this overflow the range
-
 
 
 //        ==============================  Two dimensional array creation  ================================
