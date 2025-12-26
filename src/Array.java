@@ -246,6 +246,66 @@ public class Array{
 //        System.out.println(s[0].length);  compile time error symbol not found
         System.out.println(s[0].length()); // ans: 1
 
+
+
+
+//        In multidimensional arrays length variables represent only base size but not a total size.
+//        In multidimensional arrays length variables represent only base size but not a total size.
+//        In multidimensional arrays length variables represent only base size but not a total size.
+        int[][] x = new int[6][3];
+        System.out.println(x.length); // answer 6
+        System.out.println(x[0].length); // answer 3
+
+//        There is no direct way to find total length of multidimensional array, but indirectly we can find as follows:
+        System.out.println( x[0].length+x[1].length+x[2].length);
+
+
+
+
+//        --------------------------->  anonymous array  <------------------------------------
+//        Sometimes we can declare an array without name such type of nameless array are called anonymous arrays.
+//        The main purpose of an anonymous array is just for instant use ( 1 time usage ).
+//        We can create an anonymous are as follows:
+//          While creating an anonymous array we can't specify sizes.
+//        new int[] {10,20,30,40}; -----> valid
+//        new int[2] {10,20,30,40} -----> invalid
+
+        class test{
+            public static void main(String[] arg){
+                sum(new int[]{10,20,30,40});
+
+            }
+            public static void sum(int[] j){
+                int total = 0;
+                for (int j1:j){
+                    total = total+j1;
+                }
+                System.out.println("The sum is"+total);
+            }
+        }
+
+
+//        We can create multidimensional anonymous array by:
+//        new int[] {{10,20,30,40},{60,70,80,90}};
+
+//        Based on our requirement we can give the name for anonymous array then it is no longer anonymous.
+//        int[] x = new int[] {10,20,30,40};
+
+//        The above example just to call sum method we required an array but after completing sum method call
+//        we are not using that array anymore. Hence, for this one time requirements anonymous array is the best choice.
+
+        int[] b = new int[5];
+//        b[0] =10;
+//        b[1] = 'a';
+//        byte v = 20;
+//        b[2] = v;
+//        short sh =30;
+//        b[3] = sh;
+//        b[4] = 40l;  mistake PLP found long required int
+
+
+
+
 }
 
 
