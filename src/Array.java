@@ -305,8 +305,104 @@ public class Array{
 
 
 
+//        int i = 0;
+//        int sum = 0;
+//        int[] numbers =  {1,2,3,4,5,6,7};
+//        for (i = 0 ; i< numbers.length;i++){
+//            System.out.println(numbers[i]);
+//            sum = sum+numbers[i];
+//
+//        }
+//        System.out.println("The sum of this array is"+sum);
 
-}
+
+
+
+
+//       <================================= Array element assignments ===================================>
+
+
+//        In the case of object type arrays as arrays elements we can provide either declared type object or child class objects.
+//        Object[] o = new Object[10];
+//        o[0] = new Object();
+//        o[1] = new String("Sangit");
+//        o[2] = new Integer(10);
+//        o[3] = new Character('s');
+
+//        eg:=
+//        Number[] num = new Number[10];
+//        num[0] = new Integer(20);
+//        num[1] = new String("Hello"); --------- Invalid
+//        num[2] = new Float(10.3);
+
+
+
+//        For interface type array as array elements, its implementation class objects are allowed.
+
+//        Runnable[] r = new Runnable[20];
+//        r[0] = Thread(); ------ Valid
+//        r[1] = String("Hello");
+
+
+//          Types of arrays:-        Allowed element type
+//        1. Primitive Arrays  ----> Any type of array that can be implicitly prometed to declared type
+//        2. Object type arrays ----> Either declared type or its child class object
+//        3. Abstract type arrays ----> Its child class object
+//        4. Interface type arrays ----> Its implementation class objects are allowed
+
+
+//    <========================== Array variable assignments ========================>
+
+//        Case 1:  Element level promotions are not applicable for array level
+//        For example: Char element can be promoted to int type, Whereas char[] cannot be promoted to int[]
+//        int[] m = {1,2,3,4};
+//        char[] chh = {'a','b','c'};
+//        int[] v = m; ---------> valid
+//        int[] n = chh;  ---------> invalid not acceptable because reason read case 1.
+
+//        Which of the following promotion will be performed automatically.
+//        char -------------> int       --------------valid
+//        char[] -----------> int[]     --------------invalid
+//        int --------------> double    --------------valid
+//        int[] ------------> double[]  --------------invalid
+//        float ------------> int       --------------invalid
+//        float[] ----------> int[]     --------------invalid
+//        String -----------> Object    --------------valid
+//        String[] ---------> Object[]  --------------valid
+
+
+
+//          String[] ---------> Object[]  --------------valid, But in the case of Object type arrays
+//          child class type array can be promoted to parent class type array.
+        String [] str = {"A", "B","C"};
+        Object[] a = str; // ------------>valid
+//
+//        Case2: Whenever we are assigning one array to another array internal elements won't be copied but,
+//        their reference variable will be reassigned.
+
+//        int[] arr = {10,20,30,40,50};
+//        int[] arr2 = {70,80};
+//
+//        arr=arr2; // completely valid
+//
+//        arr2=arr; // completely valid refence will reassigned.
+
+
+
+
+//        Case 3: Whenever we are assigning one array to another array the dimensional must be matched:
+//        for example: one dimensional int array we should provide one dimensional array only
+//        if we are trying to provide any other dimensional we will get compile time error.
+
+//        int[][] a = new int[3][];
+//        a[0] = new int[][];  ---------- incompatible type error found int[][] required int[].
+//        a[0] = 10;   -------- incompatible time error found int required int[]
+//        a[0] = new int[2];
+
+//        Whenever we are assigning one array to another both dimensional and the types must be matched but
+//        the sizes are not required to matched.
+
+    }
 
 
 
