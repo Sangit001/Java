@@ -51,10 +51,11 @@ class test{
 
 //        instance variables also known as object level variables or attributes.
 //        If the value of a variable is not varied from object to object then it is not recommended to declare variable as instance variable.
-//   We have to declare such types of variable at class level by using static modifier
-//In the case of instance variables for every objects the separated copy is created but in the case of static
-// variables single copy will be created at the class level on the shared by every object of the class.
-
+        //   We have to declare such types of variable at class level by using static modifier
+        //In the case of instance variables for every objects the separated copy is created but in the case of static
+        // variables single copy will be created at the class level on the shared by every object of the class.
+        //Static variable should be declare within the class directly but outside of any block or method or constructor
+        //Static variables will be created at the time of class loading and destroyed at the time of unloading. Hence, scope of static variable is exactly same as scope of dot class file.
 class Student{
     String name;
     int rollno;
