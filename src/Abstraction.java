@@ -37,7 +37,14 @@ abstract class Car{
     abstract void CarNames();
     abstract void CarColor();
 
+
+abstract class Bus{
+
+    abstract  void BusName();
+    abstract void BusColor();
 }
+}
+
 class Details extends Car{
 
     void CarNames(){
@@ -49,12 +56,26 @@ class Details extends Car{
         System.out.println("White");
     }
 
+
+class BusDetails extends Car.Bus {
+        void BusName(){
+            System.out.println("Local Bus");
+        }
+        void BusColor(){
+            System.out.println("White and Blue");
+        }
+    }
 }
+
+
 public class Abstraction {
     public static void main(String[] args) {
 
         Car car1 = new Details();
         car1.CarNames();
         car1.CarColor();
+
+        Car.Bus bus1 = new Details().BusDetails();
+        bus1.BusName();
     }
 }

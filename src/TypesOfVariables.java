@@ -134,3 +134,23 @@
 //        System.out.println(t2.x+"--"+t2.y);
 //    }
 //}
+
+
+
+
+
+//========================================= LOCAL VARIABLE =========================================
+
+//A variable which are declared inside of method or inside block or inside constructor to meet the
+// temporary requirements of a programmer is called constructor.
+
+//Local variables also called :-
+// Temporary variable
+//Stack variable
+//Automatic variable
+
+//Sometimes to meets the temporary requirements of a programmer we can declare variables
+// inside a method or block or constructor such types of variables are called local variables,
+// temporary variables, stack variables or automatic variables.
+
+//**Local variables will be stored inside stack memory.
