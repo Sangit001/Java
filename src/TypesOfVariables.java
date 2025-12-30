@@ -154,3 +154,11 @@
 // temporary variables, stack variables or automatic variables.
 
 //**Local variables will be stored inside stack memory.
+
+//Local variables will be created while executing the block in which we declared it, once block execution completes
+//automatically local variable will be destroyed. Hence, the scope of local variable is the block in which we declared it.
+//
+
+class TypesOfVariables{
+
+}
