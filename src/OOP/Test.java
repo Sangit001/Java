@@ -159,3 +159,82 @@ import java.util.*;
 // }
 
 
+
+//=============================== Inheritance / Is-a Relationship ===============================
+
+
+//class Animal{
+//    void dog(){
+//        System.out.println("Domestic");
+//    }
+//    void goat(){
+//        System.out.println("Domestic");
+//    }
+//    void tiger(){
+//        System.out.println("Wild");
+//    }
+//}
+//
+//class AddedAnimals extends Animal{
+//
+//    void Lion(){
+//        System.out.println("Wild");
+//    }
+//
+//}
+//class Test{
+//    public static void main(String[] args){
+//
+//        Animal a1 = new AddedAnimals();
+////        a1.Lion()  // We cannot user lion because it is the property of AddedAnimal (Child class) but we can use dog() instead
+//        a1.dog();
+//        // we can use both Property of parent class (Animal) and child class itself
+//        AddedAnimals a2 = new AddedAnimals();
+//        a2.Lion();
+//        a2.goat();
+//
+//    }
+//}
+
+
+
+//=============================== Multi level inheritance ===============================
+
+// We can make multiple child class of any class
+
+class Car{
+    void bmw(){
+        System.out.println("It is BMW");
+    }
+    void mercedes(){
+        System.out.println("It is Mercedes");
+    }
+}
+class Color extends Car{
+    void red(){
+        System.out.println("Color Red");
+    }
+    void black(){
+        System.out.println("Color black");
+    }
+}
+class CarDetails extends Color{
+    void price(){
+        System.out.println("Price around $1_00_000");
+    }
+}
+
+ class Test{
+    public static void main(String[] args){
+        CarDetails cd = new CarDetails();  // Child class can access its parent methods, parents inheritance comes automatically to child one.s
+        cd.bmw();
+        cd.mercedes();
+        cd.red();
+        cd.black();
+        cd.price();
+    }
+
+}
+
+
+
