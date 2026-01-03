@@ -1,62 +1,62 @@
-public class PracticeQuestion{
-    public static void main (String[] arg) {
 
 
-//        Finding elements(ascending and descending), sum and average of an array elements.
+//  1.  Write a Java program to declare two integers and print their sum, difference, product, and division.
+//	2.	Write a program to check whether a given number is even or odd.
+//	3.	Write a program to find the largest of three numbers using if-else.
+//	4.	Write a program to print numbers from 1 to 10 using a loop.
+//	5.	Write a program to calculate the factorial of a number using for loop.
 
 
-//        int[] printAll = {12, 34, 54, 65, 75};
-//        int sum =0, average = 0;
-//        int i;
-//        System.out.println("The descending order of an array is:- ");
-//        for (i = printAll.length - 1; i >= 0; i--) {
+//public class PracticeQuestion{
+//    public static void main(String[] args){
+//        int num1 = 10;
+//        int num2 = 2;
+//        int sum = num1+num2;
+//        int difference = num1-num2;
+//        int product = num1*num2;
+//        int division = num1/num2;
+//        System.out.println("Sum is "+sum+" \nDifference is "+difference+" \nProduct is "+product+" \nDivision is "+division);
+//    }
+//}
+
+
+//public class PracticeQuestion{
+//    public static void main(String[] args) {
 //
-//            sum = sum + printAll[i];
-//
-//            average = sum / 2;
-//            System.out.print(printAll[i]+" ");
-//
-//
+//        int number = 20;
+//        if(number % 2 == 0){
+//            System.out.println("This is even");
 //        }
-//        System.out.println("\nThe sum is: "+sum+"\nThe average is: "+average);
-//
-
-
-//        int[] array = {12,34,21,41};
-//        int even, odd;
-//        for(int i=0; i<array.length; i++){
-//            if(array[i]%2 == 0){
-//                System.out.println("This is even: "+array[i]);
-//            }else if(array[i]%2 == 1){
-//                System.out.println("This is odd: "+array[i]);
-//            }
+//        else{
+//            System.out.println("This is odd");
 //        }
+//    }
+//
+//}
 
-
-//        Largest element in array
-
-//        int[] array = {12,342,21,41,2};
-//        int max = 0;
-//        for(int i=1; i<array.length; i++){
-//            if(array[i] > max) {
-//                max = array[i];
+//public class PracticeQuestion{
+//    public static void main(String[] args) {
+//        int largest = 0;
+//
+//        int firstNum = 1;
+//        int secondNum = 8;
+//        int thirdNum = 15;
+//
+//        if(firstNum > largest){
+//            largest = firstNum;
+//
+//            if (secondNum > largest) {
+//                largest = secondNum;
+//                if (thirdNum > largest) {
+//                    largest = thirdNum;
 //                }
 //
-//        }        System.out.println("The largest array element is:"+ max);
-
-
-//        Smallest element in array
-
-//        int[] array = {12,342,21,41,1};
-//        int min = array[0];
-//        for(int i=0; i<array.length; i++){
-//            if(array[i]<min) {
-//                min = array[i];
 //            }
-//        }
-//        System.out.println("The largest array element is:"+ min);
-
-
-    }
-
-}
+//
+//            }
+//
+//
+//        System.out.println("The largest is: " + largest);
+//    }
+//
+//}
