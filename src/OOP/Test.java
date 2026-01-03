@@ -202,39 +202,52 @@ import java.util.*;
 
 // We can make multiple child class of any class
 
-class Car{
-    void bmw(){
-        System.out.println("It is BMW");
-    }
-    void mercedes(){
-        System.out.println("It is Mercedes");
-    }
-}
-class Color extends Car{
-    void red(){
-        System.out.println("Color Red");
-    }
-    void black(){
-        System.out.println("Color black");
-    }
-}
-class CarDetails extends Color{
-    void price(){
-        System.out.println("Price around $1_00_000");
-    }
-}
+//class Car{
+//    void bmw(){
+//        System.out.println("It is BMW");
+//    }
+//    void mercedes(){
+//        System.out.println("It is Mercedes");
+//    }
+//}
+//class Color extends Car{
+//    void red(){
+//        System.out.println("Color Red");
+//    }
+//    void black(){
+//        System.out.println("Color black");
+//    }
+//}
+//class CarDetails extends Color{
+//    void price(){
+//        System.out.println("Price around $100,000");
+//    }
+//}
+//
+// class Test{
+//    public static void main(String[] args){
+//        CarDetails cd = new CarDetails();  // Child class can access its parent methods, parents inheritance comes automatically to child one.s
+//        cd.bmw();
+//        cd.mercedes();
+//        cd.red();
+//        cd.black();
+//        cd.price();
+//    }
+//
+//}
 
- class Test{
+public class Test{
+
     public static void main(String[] args){
-        CarDetails cd = new CarDetails();  // Child class can access its parent methods, parents inheritance comes automatically to child one.s
-        cd.bmw();
-        cd.mercedes();
-        cd.red();
-        cd.black();
-        cd.price();
+        int sum = 0;
+        int[] array = {1,2,3,4,5,6,7,8,9,10};
+        for(int i = 0; i <= array.length-1; i++){
+            if(array[i] % 2 == 0) {
+                sum = sum + array[i];
+            }
+        }
+        System.out.println(sum);
     }
-
 }
-
 
 
