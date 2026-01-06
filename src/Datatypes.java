@@ -29,9 +29,9 @@ public static void main(String[] arg){
 //    Char has 2 byte size because java is UNIC0DE based and its range is 0-65535
 
 //    System.out.println(ch);
-
-int roll = 20;
-    System.out.println(roll);
+//
+//int roll = 20;
+//    System.out.println(roll);
 
 
 
