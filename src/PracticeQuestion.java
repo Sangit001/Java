@@ -60,3 +60,69 @@
 //    }
 //
 //}
+
+
+//public class PracticeQuestion{
+//    public static void main(String[] args){
+//        for(int i = 0; i <= 10; i++){
+//            System.out.println(i);
+//        }
+//    }
+//}
+
+//public class PracticeQuestion{
+//    public static void main(String[] args){
+//        int fact = 1;
+//        int n = 5;
+//        for(int i=1;i<=n;i++){
+//            fact = fact * i;
+//        }
+//        System.out.println(fact);
+//    }
+//}
+
+//class square{
+//    int number = 4;
+//    void square(){
+//        int square = number*number;
+//        System.out.println(square);
+//    }
+//}
+//
+//public class PracticeQuestion{
+//    public static void main(String[] args){
+//square s1 = new square();
+//s1.square();
+//    }
+//}
+
+
+class calculator{
+    int num1 = 10;
+    int num2 = 20;
+    int add(){
+        return num1+num2;
+    }
+    int sub(){
+        return num1-num2;
+    }
+    int mul(){
+        return num1*num2;
+    }
+    int div(){
+        return num1/num2;
+    }
+}
+
+public class PracticeQuestion{
+    public static void main(String[] args){
+
+        calculator cal = new calculator();
+        cal.add();
+        System.out.println(cal.add());
+
+
+    }
+
+
+    }
