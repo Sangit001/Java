@@ -14,9 +14,9 @@ abstract void AskUser();
 
     void Deposite(){
 
-        int UserDeposite = sc.nextInt();
-        UserBalance = UserBalance+ UserDeposite;
-        System.out.println("You have successfully deposited "+UserDeposite);
+        int UserDeposit = sc.nextInt();
+        UserBalance = UserBalance+ UserDeposit;
+        System.out.println("You have successfully deposited "+UserDeposit);
     }
     void Withdraw(){
         System.out.println("Please enter your withdraw amount");
@@ -49,7 +49,7 @@ abstract void AskUser();
      void AskUser() {
          System.out.println("1. Check your current balance.");
          System.out.println("2. Money Withdraw.");
-         System.out.println("3. Money Deposite.");
+         System.out.println("3. Money Deposit.");
          System.out.println("4. Cancel.");
 
          System.out.println("\nPlease Choose an Option: ");
