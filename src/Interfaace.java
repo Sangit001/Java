@@ -13,7 +13,6 @@ public class Interfaace{
         Rectangle r = new Rectangle();
         r.getArea(10,30);
 
-//        Commit
 
     }
 }
