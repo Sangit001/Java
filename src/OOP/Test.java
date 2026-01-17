@@ -251,3 +251,26 @@ import java.util.*;
 //}
 
 
+// ============================> Has a Relationship <==============================
+
+
+//Has a relationship is also known as composition and aggregation.
+
+class car{
+    Engine e = new Engine();
+}
+//Car has a Engine reference.
+
+class Engine{
+
+}
+
+
+
+// ============================> Method signature <==============================
+
+//In java Method signature consist of method names followed by argument types.
+
+// public static void m1(String name, int age)
+//      -> m1(String name, int age) is method signature
+//      -> return type (void) is not a part of method signature
