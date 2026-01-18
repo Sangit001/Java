@@ -274,3 +274,17 @@ class Engine{
 // public static void m1(String name, int age)
 //      -> m1(String name, int age) is method signature
 //      -> return type (void) is not a part of method signature
+
+// With in a class two methods with the same signature are not allowed.
+
+/*
+class Test{
+    public void m1(int age){
+        System.out.println("void return type");   // -> void return type
+    }
+    public int m1(int age){
+        System.out.println("int return type");    // -> int return type
+    }
+}
+ */
+// Though the return type are different but in method signature it does not play any role.
