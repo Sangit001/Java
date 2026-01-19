@@ -38,3 +38,11 @@ package OOP;
         t.m1(10.5f);   //   -> floating-point-arg type
     }
 }
+
+    -> In overloading method resolution takes care by compiler based on reference type.
+    -> Hence, overloading is also considered as (compile time polymorphism / static polymorphism / early binding).
+
+
+
+
+ */
