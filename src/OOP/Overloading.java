@@ -115,10 +115,54 @@ package OOP;
                 o.m1("Sangit");             --> String version
                 o.m1(new StringBuffer());      --> StringBuffer version
                 o.m1(null);                 --> reference to m1() is ambiguos
-
-
     }
 }
+
+            Case 4:
+
+                class Overloading{
+                public void m1(int i, float f){
+                    System.out.println("int-float version");
+                }
+                public void m1(float f, int i) {
+                    System.out.println("float-int version");
+                }
+              public static void main(String[] args){
+
+                 Overloading o = new Overloading();
+
+                 o.m1(10,10.5f);        -> int-float version
+                 o.m1(10.5f,10);        -> float-int version
+                 o.m1(10.5f,10.5f);     -> Compile time error
+                 o.m1(10,10);           -> Compile time error
+
+                }
+              }
+
+
+               Case 5:
+
+               Class Overloading{
+               public void m1(int x){
+                    System.out.println("General method");
+               }
+               public void m1(int...x){
+                    System.out.println("Var-arg method");
+               }
+               public static void main(String[] args)
+               {
+                Overloading o = new Overloading();
+
+                o.m1();             --> var-arg method
+                o.m1(10);           --> General method
+                o.m1(10,20);        --> var-arg method
+                o.m1(10,20,30);     --> var-arg method
+
+                 }
+               }
+
+               --> In general var-arg method will get the least priority, Therefore if no other method matched than only
+               var-arg method will get the chanced. It is exactly same as default case in switch case statement.
 
 
 
