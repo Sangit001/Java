@@ -93,7 +93,33 @@ package OOP;
                 o.m1(new Object());    --> Object version
                 o.m1(null);         --> String version
             }
-
         }
+
+        NOTE:
+
+        -> While resolving overloaded method compiler will always give the precedence to child type argument then
+        compared with parent type.
+
+        Case 3:
+
+        class Overloading{
+            public void m1(String s){
+                System.out.println("String version");
+            }
+            public void m1(StringBuffer sb){
+                System.out.println("StringBuffer version");
+            }
+
+            public static void main(String[] args) {
+                Overloading o = new Overloading();
+                o.m1("Sangit");             --> String version
+                o.m1(new StringBuffer());      --> StringBuffer version
+                o.m1(null);                 --> reference to m1() is ambiguos
+
+
+    }
+}
+
+
 
  */
