@@ -30,6 +30,8 @@ public class Test {
         submitBtn.setBackground(Color.red);
         f.add(submitBtn);
 
+        // Size of screen
+
 
         f.setSize(500, 500);
         f.setLayout(null);
