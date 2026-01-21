@@ -1,6 +1,8 @@
 package Swing;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Test {
 
@@ -37,6 +39,16 @@ public class Test {
         f.setLayout(null);
         f.setVisible(true);
         f.setBackground(Color.blue );
+
+
+        submitBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JLabel notice = new JLabel("You are logged in");
+                notice.setBounds(80, 120,150,30);
+                f.add(notice);
+            }
+        });
 
 
     }
