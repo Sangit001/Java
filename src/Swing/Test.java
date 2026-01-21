@@ -47,6 +47,11 @@ public class Test {
                 JLabel notice = new JLabel("You are logged in");
                 notice.setBounds(80, 120,150,30);
                 f.add(notice);
+
+                f.add(notice);
+                f.revalidate();
+                f.repaint();
+
             }
         });
 
