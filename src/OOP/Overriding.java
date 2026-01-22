@@ -17,8 +17,10 @@ public class Overriding {
         p1.m1(10);
         C c1 = new C();
         c1.m1(20);
-        P p2 = new C();
-        p2.m1(12);
-
     }
 }
+
+/*
+Overriding is also known as Run time polymorphism / Dynamic polymorphism / late binding
+In overriding JVM will take care of method resolution based on run time.
+ */
