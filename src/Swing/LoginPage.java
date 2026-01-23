@@ -23,10 +23,8 @@ public class LoginPage {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        // Ask for username
-//        String userInputUsername = sc.next();
-//        String userInputPassword = sc.next();
 
+        // Creating object using Person reference
 
         // Creating desktop GUI
         JFrame screen = new JFrame("Login");
@@ -47,11 +45,25 @@ public class LoginPage {
 
         // Labeling Box with text
         userText.setBounds(40, 100,100,20);
-        userBox.setBounds(100, 100,150,20);
+        userBox.setBounds(110, 100,150,30);
         passText.setBounds(40,140,100,20);
-        passBox.setBounds(100, 140,150,20);
+        passBox.setBounds(110, 140,150,30);
+
+        userBox.setBorder(null);
+        passBox.setBorder(null);
 
         // Creating button
+
+        JButton logBtn = new JButton("Login");
+        logBtn.setBounds(100,180,100,30);
+
+
+        // Login action
+
+
+        if()
+
+
 
 
 
@@ -61,6 +73,11 @@ public class LoginPage {
         screen.add(userBox);
         screen.add(passText);
         screen.add(passBox);
+        screen.add(logBtn);
+
+
+
+
 
 
 
