@@ -23,4 +23,29 @@ public class Overriding {
 /*
 Overriding is also known as Run time polymorphism / Dynamic polymorphism / late binding
 In overriding JVM will take care of method resolution based on run time.
+
+
+        Rules for Overriding
+        In Overriding method names and the arguments type must be matched (Method signature must be same)
+        or we can take co-variant return type. According to this child class method return type need not be same
+        as parent method return type, its child type also allowed.
+
+        class P
+        {
+        public Object m1()
+            {
+                return null;
+            }
+        }
+        class C extends P
+        {
+        public String m1()
+            {
+                return null;
+            }
+
+        }
+
+
+        .
  */
