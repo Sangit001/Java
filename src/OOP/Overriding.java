@@ -47,5 +47,12 @@ In overriding JVM will take care of method resolution based on run time.
         }
 
 
-        .
+        Parent class method return type ---->   Object                      Number           String      Double
+        Child class method return type  ---->   Object/String/StringBuffer  Number/intiger   Object ❌   Int ❌
+
+        Covariant return type ---> It is applicable only for Object types but not for primitive types.
+
+        ----> Parent class private method not available to the child, Overriding concept not applicable for private method.
+        ----> Based on our requirement we can define exactly same private method in child class it is valid but not Overriding.
+
  */
