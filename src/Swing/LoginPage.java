@@ -7,7 +7,7 @@ abstract class Detail{
     abstract void Username();
     abstract void Password();
 
-    public class Person extends Detail{
+    public static class Person extends Detail{
 
         void Username(){
             String uName = "Sangit001";
@@ -22,9 +22,10 @@ abstract class Detail{
 public class LoginPage {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
 
         // Creating object using Person reference
+
+        Detail d = new Detail.Person();
 
         // Creating desktop GUI
         JFrame screen = new JFrame("Login");
@@ -61,7 +62,9 @@ public class LoginPage {
         // Login action
 
 
-        if()
+//        if(userBox.equals()){
+//
+//        }
 
 
 

@@ -58,6 +58,21 @@ public class StudentRegistration {
         // Label for hobbies
 
         JLabel hobbies = new JLabel("Hobbies:");
+        hobbies.setBounds(20,135,100,20);
+        frame.add(hobbies);
+
+        // Checkbox for hobbies
+        JCheckBox hobbies1 = new JCheckBox("Playing");
+        hobbies1.setBounds(80, 135, 100,20);
+        frame.add(hobbies1);
+        JCheckBox hobbies2 = new JCheckBox("Singing");
+        hobbies2.setBounds(180, 135, 100,20);
+        frame.add(hobbies2);
+        JCheckBox hobbies3 = new JCheckBox("Swim");
+        hobbies3.setBounds(280, 135, 100,20);
+        frame.add(hobbies3);
+
+        // Country option
 
 
 
