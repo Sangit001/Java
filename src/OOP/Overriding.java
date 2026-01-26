@@ -1,5 +1,5 @@
 package OOP;
-
+/*
 
 class P{
     public void m1(int x){
@@ -19,6 +19,7 @@ public class Overriding {
         c1.m1(20);
     }
 }
+*\
 
 /*
 Overriding is also known as Run time polymorphism / Dynamic polymorphism / late binding

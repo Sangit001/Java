@@ -1,3 +1,5 @@
+package OOP;
+/*
 class P
 {
     public void m1(int...x){
@@ -24,5 +26,7 @@ public class OverridingVarArg {
 
     }
 }
+*\
 // -------------> in this case this is not overriding it is overloading because to meet the overriding concept,
-// return type and argument must be same there is same return type but not argument
+return type
+ */
