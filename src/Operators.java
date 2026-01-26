@@ -23,11 +23,46 @@ public class Operators {
         final x = 10;
         x++;                    Can't assign in final keyword because it is the final value and final is constant.
 
-                                but we can assign increment/decrement operator except boolean
+                                but we can assign increment/decrement operator in all primitive type except boolean
+
+        char ch = 'a';
+        ch++;
+        System.out.println(ch); ans: 'b'
+
+       ======================== Difference between b = b+1 and b++ ==============================
+
+       If we apply any arithmetic operator between two variables a and b the result will always
+
+       --> max(int, type of a, type of b)
+       --> byte a = 10;
+       --> byte b = 20;
+       --> byte c = a + b; // Max(int, type of a, type of b)
+                System.out.println(c);      ⚠️Compile time Error
+                -----------------------------
+                -----------------------------
+                -----------------------------
+       --> byte c = (byte) (a+b);           Type Casting
+                System.out.println(c);      30
+
+                ✅Type casting =>            byte c = (byte) (a+b);
+
+                byte b = 10;
+                b = b + 1;                   MAX(int,byte,int)
+                System.out.println(b);       Compile time error
+
+                TO solve this-->        b = (byte) (b+1) // 11
+
+                        // ==================== internal type casting / automatically type casting ====================
+
+                        b++;        (type of b) (b+1);  // internal type casting
+
+
+
+
+
      */
 
-//        char c = 'a';
-        System.out.println("Hello java");
+
 
     }
 }
