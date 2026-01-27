@@ -38,6 +38,8 @@ public static void main(String[] arg){
 //    int abc = ;
 //    System.out.println(abc);
 
+    System.out.println("hello");
+
 }
 
 }

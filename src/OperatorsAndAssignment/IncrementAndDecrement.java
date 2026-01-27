@@ -1,4 +1,6 @@
-public class Operators {
+package OperatorsAndAssignment;
+
+public class IncrementAndDecrement {
 
     public static void main(String[] args){
 
@@ -37,14 +39,14 @@ public class Operators {
        --> byte a = 10;
        --> byte b = 20;
        --> byte c = a + b; // Max(int, type of a, type of b)
-                System.out.println(c);      ⚠️Compile time Error
+                System.out.println(c);      Compile time Error
                 -----------------------------
                 -----------------------------
                 -----------------------------
        --> byte c = (byte) (a+b);           Type Casting
                 System.out.println(c);      30
 
-                ✅Type casting =>            byte c = (byte) (a+b);
+                Type casting =>            byte c = (byte) (a+b);
 
                 byte b = 10;
                 b = b + 1;                   MAX(int,byte,int)

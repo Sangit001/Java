@@ -25,6 +25,16 @@ public class ArithmeticOperator {
                     byte --> short --> int --> long --> float --> double
                     char --> int --> long --> float --> double
 
+                    byte a = 20;
+                    byte b = 30;
+                    byte c = a+b;   a+b converts to an int type
+                    byte c = (byte)(a+b);
+                    System.out.println(c);
+
+                    Max(int, type of a, type of b)
+                    Max(int,byte,byte)
+
+
 
 
 
