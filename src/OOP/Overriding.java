@@ -124,7 +124,15 @@ In overriding JVM will take care of method resolution based on run time.
 
                class P
              {
-
+                public void m1()
+                {
+                }
+             }
+             class C extends P
+             {
+               void m1()
+               {
+               }
              }
 
 
