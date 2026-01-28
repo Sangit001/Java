@@ -19,9 +19,12 @@ public class Overriding {
         c1.m1(20);
     }
 }
-*\
+ */
+
 
 /*
+
+
 Overriding is also known as Run time polymorphism / Dynamic polymorphism / late binding
 In overriding JVM will take care of method resolution based on run time.
 
@@ -55,5 +58,59 @@ In overriding JVM will take care of method resolution based on run time.
 
         ----> Parent class private method not available to the child, Overriding concept not applicable for private method.
         ----> Based on our requirement we can define exactly same private method in child class it is valid but not Overriding.
+
+             class P
+             {
+                private void m1()
+                {
+                }
+             }
+            class C extends P
+            {
+               private void m1()
+               {
+               }
+            }
+
+      ---> We can't override parent class final methods in child classes.
+
+            class P
+            {
+              public final void m1()
+              {
+              }
+            }
+            class C extends P
+            {
+               public void m1()
+               {
+               }
+            }
+
+            *------> Parent class abstract method we should override in child class to provide implementation.
+
+            abstract class P
+            {
+              public abstract void m1();
+            }
+            class C extends P
+            {
+              public void m1()
+              {
+              }
+            }
+
+            *------> We can override non-abstract method abstract.
+
+             class P
+             {
+               public void m1()
+               {
+               }
+             }
+             abstract class C extends P
+             {
+               public abstract void m1();
+             }
 
  */
