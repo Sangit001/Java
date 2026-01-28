@@ -113,4 +113,19 @@ In overriding JVM will take care of method resolution based on run time.
                public abstract void m1();
              }
 
+             ----------> The main advantage of this approach is we can stop the availability of parent method implementation
+             to the next level child classes.
+             ---> In overriding the following modifiers won't keep any restriction.
+             1. Synchronized
+             2. Native
+             3. Strictfp
+
+       * -> While overriding we can't reduce scope access modifiers, but we can increase the scope.
+
+               class P
+             {
+
+             }
+
+
  */
